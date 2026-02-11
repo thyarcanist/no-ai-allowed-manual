@@ -46,7 +46,7 @@ public class Program
 		
 	}
 
-	// First issue, I accidentally put the current price part in the for loop, and was wondering why it stayed the same price.
+	// First issue, I accidentally put the current price part in the for loop, and was wondering why it stayed the same price. | solved.
 	public static void AssignFish(){
 		double currentPrice = basePrice;
 		
