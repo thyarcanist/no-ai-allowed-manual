@@ -2,7 +2,7 @@ using System;
 					
 public class Program
 {
-	public static bool _isLinear = false;
+	public static bool _isLinear = true;
 	public static float _selectedRate = .24f;
 	public static float currentRate = 0f;
 	public static float limitOfRate = 7.25f;
@@ -26,9 +26,10 @@ public class Program
 	
 		// This is a linear growth rate
 	public static void RateOfLinearChange(float rate){	
+		currentRate = rate;
 		while (currentRate < limitOfRate) {
 			currentRate += rate * baseRateChange;
-			totalCountOfChanges += totalCountOfChanges + 1;
+			totalCountOfChanges++;
 			Console.WriteLine($"Rate is: {currentRate}");
 			if (currentRate >= limitOfRate) {
 				Console.WriteLine($"Rate is has been met. It took {totalCountOfChanges} to reach this point.");
@@ -38,11 +39,12 @@ public class Program
 		}
 	}
 	
-		// This is a exponential growth rate - fixing
+		// This is a exponential growth rate
 	public static void RateOfExponentialChange(float rate){	
+		currentRate = rate;
 		while (currentRate < limitOfRate) {
 			currentRate *= baseRateChange;
-			totalCountOfChanges += totalCountOfChanges + 1;
+			totalCountOfChanges++;
 			Console.WriteLine($"Rate is: {currentRate}");
 			if (currentRate >= limitOfRate) {
 				Console.WriteLine($"Rate is has been met. It took {totalCountOfChanges} to reach this point.");
