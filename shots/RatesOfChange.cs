@@ -17,7 +17,21 @@ public class Program
 	
 	
 	public static void SelectYourGrowth(bool isLinear, float selectedRate) {
-			if (isLinear) {
+		bool choosing = true;
+		Console.WriteLine("Enter L for linear or E for exponential: \n");
+		string choice = Console.ReadLine();
+		while (choosing == true) {
+			if (choice == "L"){
+				_isLinear = true;
+				choosing = false;
+			}
+			else if (choice == "E") {
+				_isLinear = false;
+				choosing = false;
+			}
+		}
+		
+			if (_isLinear) {
 				RateOfLinearChange(selectedRate);
 			} else {
 				RateOfExponentialChange(selectedRate);	
@@ -32,7 +46,7 @@ public class Program
 			totalCountOfChanges++;
 			Console.WriteLine($"Rate is: {currentRate}");
 			if (currentRate >= limitOfRate) {
-				Console.WriteLine($"Rate is has been met. It took {totalCountOfChanges} to reach this point.");
+				Console.WriteLine($"Rate is has been met. It took {totalCountOfChanges} iters of change to reach this point.");
 				totalCountOfChanges = 0;
 				break;	
 			}
@@ -47,7 +61,7 @@ public class Program
 			totalCountOfChanges++;
 			Console.WriteLine($"Rate is: {currentRate}");
 			if (currentRate >= limitOfRate) {
-				Console.WriteLine($"Rate is has been met. It took {totalCountOfChanges} to reach this point.");
+				Console.WriteLine($"Rate is has been met. It took {totalCountOfChanges} iters of change to reach this point.");
 				totalCountOfChanges = 0;
 				break;	
 			}
