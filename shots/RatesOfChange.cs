@@ -29,6 +29,10 @@ public class Program
 				_isLinear = false;
 				choosing = false;
 			}
+			else {
+				Console.WriteLine("Invalid option, choose again or refresh.\n");
+				choice = Console.ReadLine();
+			}
 		}
 		
 			if (_isLinear) {
