@@ -4,6 +4,7 @@ public class Program
 {
 
   // Day 3 program, char parser for a given string
+  // Ha! now I know how to evaluate how many characters are in a text box's string
 
   public static string word = "owbwvyyeuhdownxoruentnxbsowirurnfbsyanebgjhsbevxi";
   public static char[] charValues = word.ToCharArray();
