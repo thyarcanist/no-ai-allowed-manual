@@ -17,7 +17,7 @@ public class Program
      
        for (int i = 0; i < charValues.Length; i++)
        {
-            Console.WriteLine($"{i}");
+            Console.WriteLine($"{i} = {charValues[i]}");
        }
      
    }
