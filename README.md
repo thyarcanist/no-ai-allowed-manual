@@ -13,3 +13,11 @@ RatesOfChange...... a script that allows the user to select between Linear and E
 container....... a script that's just accumated value in containers, it's grouped accumulation.
 
 charCount....... a script that parses through character in a string. It also reverse and list the index of the char in the string.
+
+
+TODO:
+DS manipulation
+continue string/array processing
+basic algorithm implementatons
+file i/o and data parsing
+matrix operations
