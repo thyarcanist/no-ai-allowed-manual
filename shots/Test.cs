@@ -9,15 +9,15 @@ public class Program
 
    public static void Main() {
 
+	   char[] charValues = word.ToCharArray();
+	   
+		   
 
        // i want to check each char in the string.
      
-       for (int i = 0; i < word.Length(); i++)
+       for (int i = 0; i < charValues.Length; i++)
        {
-            foreach (char in word)
-            {
-
-            }
+            Console.WriteLine($"{i}");
        }
      
    }
