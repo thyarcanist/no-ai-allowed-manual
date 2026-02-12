@@ -11,3 +11,5 @@ GetTarget...... a script that's just having a name and comparing with each item 
 RatesOfChange...... a script that allows the user to select between Linear and Exponential Rates of Change.
 
 container....... a script that's just accumated value in containers, it's grouped accumulation.
+
+charCount....... a script that parses through character in a string. It also reverse and list the index of the char in the string.
