@@ -4,7 +4,7 @@ brushing up it's been a few years without manual coding but I also only really l
 Quick Guide thus far...
 
 
-BuyFish........ a simple script that assigns enums prices by name, and the price compounds - this is a simple thing. you can simply add more fish and its place on the enum is the point of which its price will be relative to the others.
+AssignFish........ a simple script that assigns enums prices by name, and the price compounds - this is a simple thing. you can simply add more fish and its place on the enum is the point of which its price will be relative to the others.
 
 GetTarget...... a script that's just having a name and comparing with each item in the array until it finds the target.
 
