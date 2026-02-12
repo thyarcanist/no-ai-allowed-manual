@@ -14,6 +14,8 @@ container....... a script that's just accumated value in containers, it's groupe
 
 charCount....... a script that parses through character in a string. It also reverse and list the index of the char in the string.
 
+Grids........ a script that instantiants and makes a 6x6 grid and another one that makes and populates a normal int array.
+
 
 TODO:
 - DS manipulation
