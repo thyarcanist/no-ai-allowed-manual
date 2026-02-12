@@ -20,26 +20,25 @@ public class Program
 	
 	// user
 	public static double wallet;
-	public static FishType[] inventory;
 	
 	
 	
 	public static void Main()
 	{
 		wallet = 260.75;
-		// the user will 
+		// the user will buy a fish? - removing this for now, that will be a different script
 		fishNames = new string[fishCount];
 		fishPrices = new double[5];
 		inventory = new FishType[0];
 		AssignFish();
 		
-		Console.WriteLine("Wanna buy some fish? \n");
-		string buyFish = Console.ReadLine();
-		if (buyFish == "y" || buyFish == "Y")
+		Console.WriteLine("Wanna browse some fish? \n");
+		string browseFish = Console.ReadLine();
+		if (browseFish == "y" || browseFish == "Y")
 		{
 			Console.WriteLine($"Which type?");
 		}
-		else if (buyFish == "n" || buyFish == "N")
+		else if (browseFish == "n" || browseFish == "N")
 		{
 			Console.WriteLine("No? Fine then.");	
 		}
@@ -57,10 +56,6 @@ public class Program
 			Console.WriteLine($"{fishNames[i]} is ${fishPrices[i]:F2}.");
 		}
 		Console.WriteLine("\n");
-	}
-	
-	public void PurchaseCount(int quantity, FishType fish){
-		// what to do when buying?
 	}
 	
 }
