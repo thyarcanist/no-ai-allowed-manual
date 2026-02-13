@@ -19,7 +19,7 @@ public class Program
 		storeMenu.Add(new MenuItem { ID = 1, NAME = "Spring Rolls", PRICE = 4.75 });
 		storeMenu.Add(new MenuItem { ID = 2, NAME = "Double Cheeseburger", PRICE = 5.25 });
 		storeMenu.Add(new MenuItem { ID = 3, NAME = "Beef Shishkabob", PRICE = 8.25 });
-    	storeMenu.Add(new MenuItem { ID = 3, NAME = "California Roll", PRICE = 16.25 });
+    	storeMenu.Add(new MenuItem { ID = 4, NAME = "California Roll", PRICE = 16.25 });
 	}
 
   // Had to write a method to fetch the MenuItem by the ID and return it.
