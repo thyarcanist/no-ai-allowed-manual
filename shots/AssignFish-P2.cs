@@ -5,7 +5,7 @@ public class Program
 {
 	public static List<Fish> fishFactory = new List<Fish>();	
 	public static double basePrice = 3.25;
-	public static double fishMultiplier = 1.07;
+	public static double fishMultiplier = 1.25;
 	public static int fishIndex = 15;
 	
 	public class Fish {
@@ -54,27 +54,24 @@ public class Program
 	// This should set the price of the fish akin to the same somewhat pattern as the AssignFish script
 	public static void SetFishPricesCompounding(){
 		double currentPrice = basePrice;
-		double totalPrice;
 		
 		Random random = new Random();
 		double minValue = 1;
-		double maxValue = 100;
+		double maxValue = 6;
 		double randomNumber = random.Next((int)minValue, (int)maxValue);
 
 		Console.WriteLine("We have this for sale. \n");
 		for (int i = 0; i < fishFactory.Count; i++) {
 			// Get the fish per the ID and assign a new price based on the ID as it goes though the list.
-			currentPrice = currentPrice *= fishMultiplier;
+			// fishFactory[i].WEIGHT = randomNumber; // its fine if each one has the same weight - this is deterministic for a reason
 			// SetPriceByID(i, currentPrice);
+			currentPrice *= fishMultiplier;        // tier increase
+			fishFactory[i].PRICE = currentPrice;   // base tier price
 
-			//randomize the weight of the fish
-			fishFactory[i].WEIGHT = randomNumber;
+			fishFactory[i].WEIGHT = randomNumber;  // market-day weight
 
-			// calculate the total price based on the weight
-			totalPrice = fishFactory[i].PRICE * fishFactory[i].WEIGHT;
+			fishFactory[i].PRICE *= fishFactory[i].WEIGHT; // final price
 
-			// assign the fish the new price based on weight.
-			fishFactory[i].PRICE = totalPrice *= fishMultiplier;
 		}
 		Console.WriteLine("\n");
 	}
@@ -84,5 +81,8 @@ public class Program
 		MakeFishInventory();
 		SetFishPricesCompounding();
 		Console.WriteLine($"{GetFishByID(fishIndex)} is ${GetFishPriceByID(fishIndex):F2}.");
+		Console.WriteLine($"{GetFishByID(1)} is ${GetFishPriceByID(1):F2}.");
+		Console.WriteLine($"{GetFishByID(5)} is ${GetFishPriceByID(5):F2}.");
+		Console.WriteLine($"{GetFishByID(13)} is ${GetFishPriceByID(13):F2}.");
 	}
 }
