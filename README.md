@@ -17,8 +17,10 @@ charCount....... a script that parses through character in a string. It also rev
 
 Grids........ a script that instantiants and makes a 6x6 grid and another one that makes and populates a normal int array.
 
+StoreMenu........ the script makes a class of MenuItem with prices, retrieves an ID from the menu as an item to select
 
-TODO:
+
+TODO (untracked):
 - DS manipulation
 - continue string/array processing
 - basic algorithm implementatons
