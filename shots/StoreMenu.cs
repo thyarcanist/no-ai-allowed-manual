@@ -27,12 +27,16 @@ public class Program
 		return storeMenu.Find(MenuItem => MenuItem.ID == id).NAME;
 	}
 	
+	public static double GetPriceByID(int id){
+		return storeMenu.Find(MenuItem => MenuItem.ID == id).PRICE;
+	}
+	
 	public static void Main() {
 	
 		InitializeStoreMenu();
 
     // It should print the beef shishkabob
-		Console.WriteLine($"Item number 3 is {GetMenuItemByID(3)}.");
+		Console.WriteLine($"Item number 3 is {GetMenuItemByID(3)} which is {GetPriceByID(3)}.");
 
 	}
 	
