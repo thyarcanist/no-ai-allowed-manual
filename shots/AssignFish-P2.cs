@@ -18,7 +18,6 @@ public class Program
 	public static void MakeFishInventory(){
 		
 		// this is actually supposed to be in compounding order
-		// this is actually supposed to be in compounding order
 		fishFactory.Add(new Fish { ID = 1, NAME = "Tilapia", PRICE = basePrice }); // Cheapest
 		fishFactory.Add(new Fish { ID = 2, NAME = "Catfish", PRICE = basePrice });
 		fishFactory.Add(new Fish { ID = 3, NAME = "Pollock", PRICE = basePrice });
