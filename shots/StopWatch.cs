@@ -10,10 +10,13 @@ public class Program
 	}
 	
 	public static void StopWatch(double time){
-		for (double i = startTime - 1; i >= 0; i--)
+		for (double i = time; i > 0; i--)
 		{	
 			time--;
-			Console.WriteLine($"T-Minus {time} until execute.");
+			Console.WriteLine($"T-Minus {i} until execute.");
+			if (time == 0){
+				Console.WriteLine("EXECUTE.");	
+			}
 		}
 	}
 	
