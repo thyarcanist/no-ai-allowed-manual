@@ -9,7 +9,15 @@ public class Program
 		StopWatch(startTime);
 	}
 	
-	public static double StopWatch(double time){
+	public static void StopWatch(double time){
+		for (double i = startTime - 1; i >= 0; i--)
+		{	
+			time--;
+			Console.WriteLine($"T-Minus {time} until execute.");
+		}
+	}
+	
+	public static double StopWatchGeneric(double time){
 		while (time !=0) {
 		time--;
 		Console.WriteLine($"T-Minus {time} until 0.");
