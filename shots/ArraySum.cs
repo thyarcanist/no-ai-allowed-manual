@@ -8,10 +8,11 @@ public class Program
 	
 	public static void Main()
 	{
+		// can make this cleaner by putting these two loops into their own functions but that's not the point of this yet, until I decide to do more with, but if I do that, I will make it a new mini-program!
 		
 		for (int i = 0; i < arr.Length; i++)
 		{
-			if (i == 0){
+			if (i == 0){ // this skips the first index, "0" is whichever element should be skipped.
 				Console.WriteLine($"The total sum before skipping will equal 100! \n");
 			} else
 			{
