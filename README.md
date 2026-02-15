@@ -1,6 +1,7 @@
 # no-ai-generated-code
 explanations are allowed tho!
-brushing up it's been a few years without manual coding but I also only really learned code from using C# and unity
+brushing up it's been a few years without manual coding but I also only really learned code from using C# and unity. Plug and play these into:
+https://dotnetfiddle.net/
 
 Quick Guide thus far...
 
