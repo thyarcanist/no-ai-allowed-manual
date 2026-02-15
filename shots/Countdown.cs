@@ -8,10 +8,10 @@ public class Program
 	
 	public static void Main()
 	{
-		StopWatch(startTime);
+		Countdown(startTime);
 	}
 	
-	public static void StopWatch(double time){
+	public static void Countdown(double time){
 		for (double i = time; i > 0; i--)
 		{	
 			Console.WriteLine($"T-Minus {i} until execute.");
@@ -26,7 +26,7 @@ public class Program
 		}
 	}
 	
-	public static double StopWatchGeneric(double time){
+	public static double CountdownGeneric(double time){
 		while (time !=0) {
 		time--;
 		Console.WriteLine($"T-Minus {time} until 0.");
