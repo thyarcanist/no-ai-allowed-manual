@@ -21,6 +21,8 @@ Grids........ a script that instantiants and makes a 6x6 grid and another one th
 
 StoreMenu........ the script makes a class of MenuItem with prices, retrieves an ID from the menu as an item to select
 
+Countdown..... a countdown program that has FizzBizz integrated into it. FizzBuzz is a patterm that can be used for error correction such as per, "3" steps check this and do that as that countdown goes.
+
 
 TODO (untracked):
 - DS manipulation
