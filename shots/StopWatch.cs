@@ -3,6 +3,8 @@ using System;
 public class Program
 {
 	public static double startTime = 30;
+	public static int modA = 3;
+	public static int modB = 5;
 	
 	public static void Main()
 	{
@@ -14,12 +16,12 @@ public class Program
 		{	
 			Console.WriteLine($"T-Minus {i} until execute.");
 			// FizzBuzz must go first
-			if (i % 3 == 0 && i % 5 == 0){
-				Console.WriteLine("FIZZBUZZ.");	
-			} else if (i % 3 == 0) {
-				Console.WriteLine("MOD 3 = FIZZ.");	
-			} else if (i % 5 == 0) {
-				Console.WriteLine("MOD 5 = BUZZ.");	
+			if (i % modA == 0 && i % modB == 0){
+				Console.WriteLine($"FIZZBUZZ.");	
+			} else if (i % modA == 0) {
+				Console.WriteLine($"MOD {modA} = FIZZ.");	
+			} else if (i % modB == 0) {
+				Console.WriteLine($"MOD {modB} = BUZZ.");	
 			}
 		}
 	}
