@@ -2,7 +2,7 @@ using System;
 					
 public class Program
 {
-	public static double startTime = 10;
+	public static double startTime = 30;
 	
 	public static void Main()
 	{
@@ -12,10 +12,14 @@ public class Program
 	public static void StopWatch(double time){
 		for (double i = time; i > 0; i--)
 		{	
-			time--;
 			Console.WriteLine($"T-Minus {i} until execute.");
-			if (time == 0){
-				Console.WriteLine("EXECUTE.");	
+			// FizzBuzz must go first
+			if (i % 3 == 0 && i % 5 == 0){
+				Console.WriteLine("FIZZBUZZ.");	
+			} else if (i % 3 == 0) {
+				Console.WriteLine("MOD 3 = FIZZ.");	
+			} else if (i % 5 == 0) {
+				Console.WriteLine("MOD 5 = BUZZ.");	
 			}
 		}
 	}
