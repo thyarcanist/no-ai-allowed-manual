@@ -24,6 +24,8 @@ StoreMenu........ the script makes a class of MenuItem with prices, retrieves an
 
 Countdown..... a countdown program that has FizzBizz integrated into it. FizzBuzz is a patterm that can be used for error correction such as per, "3" steps check this and do that as that countdown goes.
 
+ListArraySort.... a script that sorts divisibles into its own array and prints it out
+
 
 TODO (untracked):
 - DS manipulation
