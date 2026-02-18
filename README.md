@@ -33,9 +33,9 @@ MaxAlloc..... a script that increases the integer until it hits a maximum alloca
 
 TODO (untracked):
 - DS manipulation
-- continue string/array processing
+~~- continue string/array processing~~
 - basic algorithm implementatons
-- file i/o and data parsing
+~~- file i/o and data parsing~~
 - matrix operations
 - lerp
 - integral
