@@ -26,6 +26,8 @@ Countdown..... a countdown program that has FizzBizz integrated into it. FizzBuz
 
 ListArraySort.... a script that sorts divisibles into its own array and prints it out
 
+ArraySum...... grabs part of an array and sums up the total of that it.
+
 
 TODO (untracked):
 - DS manipulation
