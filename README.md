@@ -28,6 +28,8 @@ ListArraySort.... a script that sorts divisibles into its own array and prints i
 
 ArraySum...... grabs part of an array and sums up the total of that it.
 
+MaxAlloc..... a script that increases the integer until it hits a maximum allocation amount after the first time reaches zero. It gracesfully exists the while loop
+
 
 TODO (untracked):
 - DS manipulation
